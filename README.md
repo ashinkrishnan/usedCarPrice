@@ -1,6 +1,6 @@
 # Project :
 ## usedCarPricePrediction
- ![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg) [![ForTheBadge uses-html](http://ForTheBadge.com/images/badges/uses-html.svg)
+ ![made-with-python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)
 
 This is a portfolio Machine Leraning Project based on advanced regression techniques to predict the used car price in the major indian cities.
 The project was developed as follows
