@@ -1,7 +1,7 @@
 # Project :
 ## usedCarPricePrediction
 
-This is a Machine Leraning Project based on advanced regression techniques to predict the used car price in the major indian cities.
+This is a portfolio Machine Leraning Project based on advanced regression techniques to predict the used car price in the major indian cities.
 The project was developed as follows
 
 1. **Built the model after a sophisticated exloratory data analysis and data cleaning**
