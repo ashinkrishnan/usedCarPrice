@@ -23,6 +23,8 @@ During the model building we covered almost all data science concepts,tools whic
 
 http://ec2-3-21-237-251.us-east-2.compute.amazonaws.com/
 
+![](app.gif)
+
 
 
 
