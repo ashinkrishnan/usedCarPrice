@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Used Car Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+<script>
+        $(function(){
+            var model = [
+            "i10",
+        "city",
+        "3-Series",
+        "e-class",
+        "fortuner",
+        "grand",
+        "corolla",
+        "scorpio",
+        "ciaz",
+        "swift",
+        "i20",
+        "ertiga",
+        "fabia",
+        "linea",
+        "wagon-R",
+        "eeco",
+        "figo",
+        "new",
+        "ameo",
+        "xuv500",
+        "creta",
+        "innova",
+        "ecosport",
+        "indigo",
+        "continental",
+        "baleno",
+        "safari",
+        "xenon",
+        "ssangyong",
+        "verna",
+        "octavia",
+        "rapid",
+        "duster",
+        "vitara",
+        "m-class",
+        "celerio",
+        "accord",
+        "xcent",
+        "micra",
+        "alto",
+        "amaze",
+        "nano",
+        "avventura",
+        "eon",
+        "koleos",
+        "qualis",
+        "polo",
+        "laura",
+        "ikon",
+        "tucson",
+        "etios",
+        "x1",
+        "s60",
+        "vento",
+        "endeavour",
+        "yeti",
+        "sx4",
+        "cr-v",
+        "a4",
+        "jetta",
+        "superb",
+        "zest",
+        "6-Series",
+        "hexa",
+        "beat",
+        "dzire",
+        "brio",
+        "a-star",
+        "optra",
+        "civic",
+        "s-cross",
+        "cla",
+        "indica",
+        "5-Series",
+        "mobilio",
+        "kuv",
+        "cayenne",
+        "zen",
+        "x5",
+        "tiago",
+        "800",
+        "aspire",
+        "q5",
+        "q3",
+        "range-rover",
+        "xf",
+        "kwid",
+        "jazz",
+        "bolero",
+        "clubman",
+        "xylo",
+        "cruze",
+        "aveo",
+        "x6",
+        "santro",
+        "wrv",
+        "santafe",
+        "countryman",
+        "q7",
+        "xc60",
+        "pajero",
+        "a6",
+        "enjoy",
+        "panamera",
+        "ritz",
+        "scala",
+        "s",
+        "manza",
+        "elite",
+        "brv",
+        "sunny",
+        "1-Series",
+        "sonata",
+        "sl-class",
+        "gla",
+        "cooper",
+        "a3",
+        "fiesta",
+        "x3",
+        "platinum",
+        "a-class",
+        "passat",
+        "crosspolo",
+        "fluence",
+        "sumo",
+        "tuv-300",
+        "camry",
+        "s-class",
+        "compass",
+        "gle",
+        "xe",
+        "thar",
+        "terrano",
+        "elantra",
+        "redi-go",
+        "7",
+        "punto",
+        "x-trail",
+        "accent",
+        "cedia",
+        "omni",
+        "teana",
+        "a7",
+        "quanto",
+        "grande",
+        "xj",
+        "gl-class",
+        "getz",
+        "v40",
+        "pulse",
+        "evalia",
+        "nuvosport",
+        "glc",
+        "spark",
+        "r-class",
+        "xc90",
+        "captiva",
+        "renault",
+        "lodgy",
+        "tigor",
+        "1000",
+        "slk-class",
+        "c-class",
+        "verito",
+        "freestyle",
+        "go",
+        "bolt",
+        "rs5",
+        "tavera",
+        "ignis",
+        "slc",
+        "tt",
+        "beetle",
+        "xuv300",
+        "sail",
+        "gallardo",
+        "cayman",
+        "estilo",
+        "esteem",
+        "boxster",
+        "d-max",
+        "petra",
+        "outlander",
+        "mux",
+        "nexon",
+        "lancer",
+        "br-v",
+        "force-one",
+        "classic",
+        "z4",
+        "captur",
+        "a8",
+        "venture",
+        "cls-class",
+        "jeep",
+        "gls",
+        "s80"
+            ];
+             
+            $("#uiCar_Model").autocomplete({
+                source:model
+            });
+        });
+</script>
+
+    <div>
+        <article>
+            
+                <h1><mark>USED CAR PRICE PREDICTION FOR VARIOUS INDIAN CITIES</mark></h1>
+                <h3>[* Every Field below are mandatory columns that need to be filled]</h3>
+                
+            
+        
+        </article>
+    </div>
+
+    <div class="img"></div>
+
+<form class="form">
+        <h2>Car Company </h2>
+
+        <div>
+            <select class="Car_Company" name="" id="uiCar_Company">
+                <option value="" disabled="disabled" selected="selected">Choose a Company</option>
+                <option>maruthi</option>
+                <option>hyndai</option>
+            </select>
+        </div>
+        </form>
+
+<form class="form">
+
+        <h2>Car Model </h2>
+        <h4>Eg: alto,swift</h4>
+        <input class="Car_Model" id="uiCar_Model" type="text"/> 
+                     
+    </form>
+
+
+<form class="form">
+
+        <h2>Engine_CC</h2>
+        <h4> Engine capacity in cubic centimeter,Eg:1500,998</h4>
+        <input class="Engine_CC" id="uiEngine_CC" type="number" ><b>C_C</b>
+             
+    </form>
+
+    <form class="form">
+        <h2>Fuel_Type </h2>
+                        
+            <div>
+                <select class="Fuel_Type" name="" id="uiFuel_Type">
+                    <option value="" disabled="disabled" selected="selected">Choose a Fuel_Type</option>
+                        <option>Petrol</option>
+                        
+                </select>
+            </div>
+            </form> 
+
+<form class="form">
+
+        <h2>Engine_horsepower</h2>
+        <h4>[In Basic Horse Power,like: 89,100,277] </h4>
+        <input class="Power_bhp" id="uiPower_bhp" type="number"/><b>Bhp</b>
+    </form>
+
+<form class="form">
+
+        <h2>Mileage in kmpl</h2>
+        <h4>[In kilometer per liter ]</h4>
+        <input class="Mileage_kmpl" id="uiMileage_kmpl" type="number"/><b>Kmpl</b>
+    </form>
+
+<form class="form">
+
+        <h2>Kilometers_Driven</h2>
+        <input class="Kilometers_Driven" id="uiKilometers_Driven" type="number"/><b>Km</b>
+        
+    </form>
+
+
+<form class="form">
+    <h2>Transmission </h2>
+            
+        <div>
+            <select class="Transmission" name="" id="uiTransmission">
+                <option value="" disabled="disabled" selected="selected">Choose a Transmission</option>
+                    <option>manual</option>
+                    
+                    
+            </select>
+        </div>
+        </form>
+
+<form class="form">
+    <h2>Owner_Type </h2>
+                    
+        <div>
+            <select class="Owner_Type" name="" id="uiOwner_Type">
+                <option value="" disabled="disabled" selected="selected">Choose a Owner_Type</option>
+                    <option>first</option>
+                    <option>second</option>
+            </select>
+        </div>
+        </form>        
+
+<form class="form">
+
+        <h2>Year</h2>
+        <h4>[Year of Manufacture / like: 2001,1998,2015] </h4>
+        <input class="Year" id="uiYear" type="number"/>
+    </form>
+
+<form class="form">
+        <h2>Location</h2>
+        <h4>[Select nearest city to your location]</h4>               
+        <div>
+            <select class="Location" name="" id="uiLocation">
+                <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+                    <option>Trivandrum</option>
+                    <option>Nagarcoil</option>
+            </select>
+        </div>
+        </form>
+
+<form class="form">	
+	    <button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+        <div id="uiEstimatedPrice" class="result" >	<h2></h2> </div>
+    </form>
+
+</body>
+</html>
