@@ -11,12 +11,12 @@ The project was developed as follows
 
 During the model building we covered almost all data science concepts,tools which are used are
    1. Python
-   2.Numpy and Pandas for data cleaning
-   3.Matplotlib for data visualization
-   4.Sklearn for model building
-   5.Boosting techniques
-   6.Jupyter notebook, visual studio code as IDE
-   7.Python flask for http server
+   2. Numpy and Pandas for data cleaning
+   3. Matplotlib for data visualization
+   4. Sklearn for model building
+   5. Boosting techniques
+   6. Jupyter notebook, visual studio code as IDE
+   7. Python flask for http server
    8. HTML/CSS/Javascript for UI
 
 **The web app is deployed as **
