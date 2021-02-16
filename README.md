@@ -19,11 +19,10 @@ During the model building we covered almost all data science concepts,tools whic
    7.Python flask for http server
    8. HTML/CSS/Javascript for UI
 
-## The web app is deployed as
+**The web app is deployed as **
 
 http://ec2-3-21-237-251.us-east-2.compute.amazonaws.com/
 
-![](app.gif)
 
 
 
